@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.head {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+ height: 130px;
+}
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+.logo{
+  width: 50px;
+  cursor: pointer
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li .ac{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.search{
+  height: auto;
+  width: 20px;
+}
+.data {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(back-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+div img {
+  border: 4px hidden rgb(10, 132, 232);
+  border-radius: 15px ;
+  transition: 0.2s;
+}
+
+img {
+  width: 320px;
+  height: 220px;
+  margin: 20px;
+
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+
+}
+
+img:hover {
+  opacity: 0.8;
+  border: 4px solid crimson;
+
+
+}
+
+.mech {
+  margin: 100px 0 0 50px;
+  padding: 0 10px;
+  width: 770px;
+  height: 350px;
+  border: 3px hidden aqua;
+  border-radius: 20px;
+  background-color: rgba(0, 255, 238, 0.715);
+  transition: 0.5s;
+
+}
+
+.electrical {
+  margin: 100px 0 0 700px;
+  padding: 0 10px;
+  width: 770px;
+  height: 350px;
+  border: 3px hidden aqua;
+  border-radius: 20px;
+  background-color: rgba(255, 0, 153, 0.715);
+  transition: 0.5s;
+}
+
+.civil {
+  margin: 100px 0 0 200px;
+  padding: 0 10px;
+  width: 770px;
+  height: 350px;
+  border: 3px hidden aqua;
+  border-radius: 20px;
+  background-color: rgba(255, 0, 55, 0.715);
+  transition: 0.5s;
+
+}
+
+.entc {
+  margin: 100px 0 0 700px;
+  padding: 0 10px;
+  width: 770px;
+  height: 350px;
+  border: 3px hidden aqua;
+  border-radius: 20px;
+  background-color: rgba(187, 0, 255, 0.715);
+  transition: 0.5s;
+
+}
+
+.cse {
+  margin: 100px 0 0 200px;
+  padding: 0 10px;
+  width: 770px;
+  height: 350px;
+  border: 3px hidden aqua;
+  border-radius: 20px;
+  background-color: rgba(145, 255, 0, 0.715);
+  transition: 0.5s;
+
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+
+p:hover {
+  color: yellow;
+  background-color: rgba(0, 0, 255, 0.715);
+}
+.mech:hover {
+  background-color: rgba(0, 0, 255, 0.715);
+}
+.electrical:hover{
+  background-color: rgba(0, 0, 255, 0.715);
+}
+.civil:hover{
+  background-color: rgba(0, 0, 255, 0.715);
+}
+.entc:hover{
+  background-color: rgba(0, 0, 255, 0.715);
+}
+.cse:hover{
+  background-color: rgba(0, 0, 255, 0.715);
+}
