@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Login.css">
+    <style>
+    </style>
+    <script>
+        function fa() {
+            if (a.value == "" || b.value == "") {
+                f()
+                document.getElementById("a").style.border = "3px solid red"
+                document.getElementById("b").style.border = "3px solid red"
+                bt.value = "Fill Data First"
+            }
+            else {
+                document.getElementById("a").style.border = "3px solid green"
+                document.getElementById("b").style.border = "3px solid green"
+                bt.value = "Good"
+                bt.style.left = "120px";
+            }
+        }
+        flag = 1
+        function f() {
+            if (flag == 1) {
+                bt.style.left = "210px"
+                flag = 2
+            }
+            else if (flag == 2) {
+                bt.style.left = "80px"
+                flag = 1
+            }
+        } 
+    </script>
+</head>
+
+<body class="lb">
+    <div class="head">
+        <div class="navbar">
+            <a href="Home.html"><img src="Logo.png" class="logo"></a>
+            <ul>
+                <li>
+                <li> <a class="ac" href="Home.html">Home</a> </li>
+                <li> <a class="ac" href="about.html" target="_blank">About</a> </li>
+                <li><a class="ac" href="Update.html">Updates</a> </li>
+                <li> <a class="ac" href="contactus.html">Contact US</a> </li>
+                <li> <a class="ac" href="Login.html">Login</a> </li>
+                <input type="search" name="Abc" id="se">
+                <li><a class="ac" href=""><img src="serc.png" class="search"></a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="outer">
+        <h1 style="text-align:center">Login</h1>
+        <p>Enter Id</p>
+        <input class="in" type="text" placeholder="Enter id" id="a" />
+        <p>Enter Confirm Pass</p>
+        <input class="in" type="password" placeholder="Enter password" id="b" />
+        <br>
+        <input type="submit" onmouseenter="fa()" onclick="alert('You Are IN')" id="bt" />
+
+    </div>
+
+</body>
+
+
+</html>
